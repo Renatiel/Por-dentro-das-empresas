@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: theme("colors.paper");
+  color: theme("colors.ink");
+  font-family: theme("fontFamily.sans");
+}
+
+/* Linha de razão contábil: substitui o "card com sombra" genérico. */
+.linha-registro {
+  border-bottom: 1px solid theme("colors.ledger");
+}
+
+.numero {
+  font-family: theme("fontFamily.mono");
+  font-variant-numeric: tabular-nums;
+}
